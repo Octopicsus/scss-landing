@@ -37,17 +37,21 @@ h2 {
     font-family: $robotoM;
 }
 
+
 h1 {
     font-size: $h1_Title_Size;
 }
+
 
 h2 {
     font-size: $h2_Title_Size;
 }
 
+
 h5 {
     font-size: 21px;
 }
+
 
 p {
     font-size  : $body_Title_Size;
@@ -55,15 +59,18 @@ p {
     line-height: 24px;
 }
 
+
 a {
     text-decoration: none;
     color          : black;
 }
 
+
 body {
     font-family     : $robotoR;
     background-color: rgb(249, 249, 249);
 }
+
 
 
 
@@ -75,15 +82,17 @@ header {
     position        : fixed;
     background-color: rgb(238, 239, 241);
 
+
     .menu__wrapper {
         width     : $main_Wrapper_Width;
-        // display: none;
+
 
         .menu {
             display              : grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             justify-self         : start;
             gap                  : 42px;
+
 
             a:hover {
                 color: $brand_Color-hover;
@@ -93,6 +102,7 @@ header {
 }
 
 
+
 .main__title {
     background-color: rgb(238, 239, 241);
     width           : 100%;
@@ -100,18 +110,22 @@ header {
     justify-items   : center;
     padding-bottom  : 100px;
 
+
     .main__title__wrapper {
         width      : $main_Wrapper_Width;
         padding-top: 258px;
+
 
         h1 {
             margin-bottom: 60px;
         }
 
+
         p {
             width        : 540px;
             margin-bottom: 65px;
         }
+
 
         button {
             padding         : 18px 40px;
@@ -119,6 +133,7 @@ header {
             background-color: $brand_Color;
             color           : white;
             cursor          : pointer;
+
 
             &:hover {
                 background-color: $brand_Color-hover;
@@ -128,21 +143,25 @@ header {
 }
 
 
+
 .about__title {
     display       : grid;
     justify-items : center;
     padding-top   : 100px;
     padding-bottom: 100px;
 
+
     .about__title__wrapper {
         display      : grid;
         justify-items: center;
         width        : $main_Wrapper_Width;
 
+
         h2 {
             margin-bottom: 50px;
             text-align   : center;
         }
+
 
         p {
             width     : 540px;
@@ -150,6 +169,7 @@ header {
         }
     }
 }
+
 
 
 .portfolio {
@@ -160,11 +180,13 @@ header {
     width           : 100%;
     justify-content : space-around;
 
+
     .portfolio__wrapper {
         width                : $main_Wrapper_Width;
         display              : grid;
         justify-items        : center;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
 
         .work__card {
             display              : grid;
@@ -172,12 +194,14 @@ header {
             justify-self         : start;
             align-items          : center;
 
+
             .work__card__icon {
                 background-image : url(/img/project.svg);
                 background-repeat: no-repeat;
                 width            : 50px;
                 height           : 50px;
             }
+
 
             h5,
             p {
@@ -188,21 +212,25 @@ header {
 }
 
 
+
 .service__title {
     display       : grid;
     justify-items : center;
     padding-top   : 100px;
     padding-bottom: 60px;
 
+
     .service__title__wrapper {
         display      : grid;
         justify-items: center;
         width        : $main_Wrapper_Width;
 
+
         h2 {
             margin-bottom: 50px;
             text-align   : center;
         }
+
 
         p {
             margin-bottom: 50px;
@@ -213,16 +241,19 @@ header {
 }
 
 
+
 .demo__video__wrapper {
     display      : grid;
     justify-items: center;
     margin-bottom: 100px;
+
 
     img {
         width   : $main_Wrapper_Width;
         position: relative;
         z-index : -1;
     }
+
 
     .demo__video__icon {
         background-image : url(/img/play-button.svg);
@@ -242,26 +273,28 @@ header {
 }
 
 
+
 footer {
     width           : 100%;
     background-color: $brand_Color;
     color           : white;
     display         : grid;
 
-    .footer__wrapper {
 
+    .footer__wrapper {
         width       : $main_Wrapper_Width;
         display     : grid;
         justify-self: center;
         align-items : baseline;
         padding     : 50px 0;
 
-        .footer__author {
 
+        .footer__author {
             margin-bottom: 20px;
             font-family  : var(--robotoM);
             font-size    : 21px;
         }
+
 
         .footer__protection {
             font-size: 14px;
@@ -272,9 +305,15 @@ footer {
 
 
 
+
+
+
+
 @media (max-width: 1120px) {
 
+
     header {
+
 
         .menu__wrapper {
             padding-left: 40px;
@@ -284,44 +323,57 @@ footer {
     }
 
 
+
     .main__title {
+
 
         .main__title__wrapper {
             width       : auto;
             padding-left: 20px;
-         
         }
+
     }
+
 
 
     .about__title {
 
+
         .about__title__wrapper {
             width: 100%;
         }
+
     }
 
 
-    .portfolio {
 
+    .portfolio {
         padding: 50px 0;
+
 
         .portfolio__wrapper {
             grid-template-columns: 1fr 1fr 1fr;
             gap                  : 50px;
             width                : 100%;
         }
+
     }
+
 
 
     .service__title {
 
+
         .service__title__wrapper {
             width: 100%;
         }
+
     }
 
+
+
     .demo__video__wrapper {
+
 
         img {
             width: 100%;
@@ -329,21 +381,24 @@ footer {
     }
 
 
+
     footer {
+
 
         .footer__wrapper {
             width: 100%;
 
+
             .footer__author {
                 padding-left: 20px;
             }
+
 
             .footer__protection {
                 padding-left: 20px;
             }
         }
     }
-
 }
 
 
@@ -354,9 +409,11 @@ footer {
     header {
         justify-content: start;
 
+
         .menu__wrapper {
             display: none;
         }
+
 
         .menu__burger__wrapper {
             padding-left : 20px;
@@ -369,14 +426,17 @@ footer {
     .main__title {
         justify-items: start;
 
+
         .main__title__wrapper {
             padding-top: 200px;
+
 
             h1 {
                 line-height  : 50px;
                 width        : 70%;
                 margin-bottom: 40px;
             }
+
 
             p {
                 width        : 80%;
@@ -390,21 +450,23 @@ footer {
         padding-top   : 80px;
         padding-bottom: 80px;
 
+
         .about__title__wrapper {
+
+
             p {
                 width: 80%;
             }
         }
-
     }
 
 
     .portfolio {
 
+
         .portfolio__wrapper {
             grid-template-columns: 1fr 1fr;
         }
-
     }
 
 
@@ -412,33 +474,41 @@ footer {
         padding-top   : 80px;
         padding-bottom: 30px;
 
+
         .service__title__wrapper {
+
 
             h2 {
                 width: 80%;
             }
 
+
             p {
                 width: 80%;
             }
         }
-
-
     }
 
+    
     .demo__video__wrapper {
         margin-bottom: 50px;
     }
 
+
+
     .footer__wrapper {
         grid-template-columns: 1fr 2fr;
         padding              : 20px 0;
+
+
 
         .footer__author {
             font-size    : 18px;
             line-height  : 26px;
             margin-bottom: 0;
         }
+
+
 
         .footer__protection {
             justify-self : end;
@@ -453,12 +523,15 @@ footer {
 
 @media (max-width: 432px) {
 
+
     header {
         padding: 15px 0;
     }
 
 
+
     .main__title {
+
 
         .main__title__wrapper {
             padding-top: 150px;
@@ -466,20 +539,23 @@ footer {
     }
 
 
+
     .portfolio {
+
 
         .portfolio__wrapper {
             grid-template-columns: 1fr;
         }
     }
 
+
+
     .demo__video__wrapper {
         margin-bottom: 50px;
 
+        
         .demo__video__icon {
             scale: 0.6;
         }
     }
-
-
 }
