@@ -249,6 +249,7 @@ footer {
     display         : grid;
 
     .footer__wrapper {
+
         width       : $main_Wrapper_Width;
         display     : grid;
         justify-self: center;
@@ -256,6 +257,7 @@ footer {
         padding     : 50px 0;
 
         .footer__author {
+
             margin-bottom: 20px;
             font-family  : var(--robotoM);
             font-size    : 21px;
@@ -270,59 +272,84 @@ footer {
 
 
 
-@media (max-width: 1110px) {
+@media (max-width: 1120px) {
 
-    $main_Wrapper_Width: 100%;
+    header {
 
+        .menu__wrapper {
+            padding-left: 40px;
+            width       : 100%;
+        }
 
-    .menu__wrapper {
-        padding-left: 40px;
     }
 
 
-    .main__title__wrapper {
-        width       : auto;
-        padding-left: 20px;
+    .main__title {
+
+        .main__title__wrapper {
+            width       : auto;
+            padding-left: 20px;
+         
+        }
     }
 
 
-    .about__title__wrapper {
-        width: 100%;
-    }
+    .about__title {
 
-
-    .portfolio__wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap                  : 50px;
+        .about__title__wrapper {
+            width: 100%;
+        }
     }
 
 
     .portfolio {
+
         padding: 50px 0;
-    }
 
-    .service__title__wrapper {
-        width: 100%;
-    }
-
-
-    .footer__author {
-        padding-left: 20px;
+        .portfolio__wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap                  : 50px;
+            width                : 100%;
+        }
     }
 
 
-    .footer__protection {
-        padding-left: 20px;
+    .service__title {
+
+        .service__title__wrapper {
+            width: 100%;
+        }
     }
+
+    .demo__video__wrapper {
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    footer {
+
+        .footer__wrapper {
+            width: 100%;
+
+            .footer__author {
+                padding-left: 20px;
+            }
+
+            .footer__protection {
+                padding-left: 20px;
+            }
+        }
+    }
+
 }
 
 
 
 @media (max-width: 768px) {
 
-    $h1_Title_Size  : 40px;
-    $h2_Title_Size  : 28px;
-    $body_Title_Size: 16px;
 
     header {
         justify-content: start;
@@ -363,14 +390,21 @@ footer {
         padding-top   : 80px;
         padding-bottom: 80px;
 
-        p {
-            width: 80%;
+        .about__title__wrapper {
+            p {
+                width: 80%;
+            }
         }
+
     }
 
 
-    .portfolio__wrapper {
-        grid-template-columns: 1fr 1fr;
+    .portfolio {
+
+        .portfolio__wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+
     }
 
 
@@ -378,13 +412,18 @@ footer {
         padding-top   : 80px;
         padding-bottom: 30px;
 
-        h2 {
-            width: 80%;
+        .service__title__wrapper {
+
+            h2 {
+                width: 80%;
+            }
+
+            p {
+                width: 80%;
+            }
         }
 
-        p {
-            width: 80%;
-        }
+
     }
 
     .demo__video__wrapper {
@@ -393,19 +432,19 @@ footer {
 
     .footer__wrapper {
         grid-template-columns: 1fr 2fr;
-        padding: 20px 0;
+        padding              : 20px 0;
 
         .footer__author {
-            font-size: 18px;
-            line-height: 26px;
+            font-size    : 18px;
+            line-height  : 26px;
             margin-bottom: 0;
         }
 
         .footer__protection {
-            justify-self: end;
+            justify-self : end;
             padding-right: 20px;
-            font-size: 12px;
-            text-align: right;
+            font-size    : 12px;
+            text-align   : right;
         }
     }
 }
@@ -414,23 +453,33 @@ footer {
 
 @media (max-width: 432px) {
 
-    header{
+    header {
         padding: 15px 0;
     }
 
-    .main__title__wrapper {
-        padding-top: 150px;
+
+    .main__title {
+
+        .main__title__wrapper {
+            padding-top: 150px;
+        }
     }
 
-    .portfolio__wrapper {
-        grid-template-columns: 1fr;
+
+    .portfolio {
+
+        .portfolio__wrapper {
+            grid-template-columns: 1fr;
+        }
     }
 
     .demo__video__wrapper {
         margin-bottom: 50px;
+
+        .demo__video__icon {
+            scale: 0.6;
+        }
     }
 
-    .demo__video__icon {
-        scale: 0.6;
-    }
+
 }

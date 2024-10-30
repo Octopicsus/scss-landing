@@ -326,31 +326,39 @@ footer .footer__wrapper .footer__protection {
   font-size: 14px;
 }
 
-@media (max-width: 1110px) {
-  .menu__wrapper {
+@media (max-width: 1120px) {
+  header .menu__wrapper {
     padding-left: 40px;
+    width: 100%;
   }
-  .main__title__wrapper {
+  .main__title .main__title__wrapper {
     width: auto;
     padding-left: 20px;
   }
-  .about__title__wrapper {
+  .about__title .about__title__wrapper {
     width: 100%;
-  }
-  .portfolio__wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
   }
   .portfolio {
     padding: 50px 0;
   }
-  .service__title__wrapper {
+  .portfolio .portfolio__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
     width: 100%;
   }
-  .footer__author {
+  .service__title .service__title__wrapper {
+    width: 100%;
+  }
+  .demo__video__wrapper img {
+    width: 100%;
+  }
+  footer .footer__wrapper {
+    width: 100%;
+  }
+  footer .footer__wrapper .footer__author {
     padding-left: 20px;
   }
-  .footer__protection {
+  footer .footer__wrapper .footer__protection {
     padding-left: 20px;
   }
 }
@@ -385,20 +393,20 @@ footer .footer__wrapper .footer__protection {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .about__title p {
+  .about__title .about__title__wrapper p {
     width: 80%;
   }
-  .portfolio__wrapper {
+  .portfolio .portfolio__wrapper {
     grid-template-columns: 1fr 1fr;
   }
   .service__title {
     padding-top: 80px;
     padding-bottom: 30px;
   }
-  .service__title h2 {
+  .service__title .service__title__wrapper h2 {
     width: 80%;
   }
-  .service__title p {
+  .service__title .service__title__wrapper p {
     width: 80%;
   }
   .demo__video__wrapper {
@@ -424,16 +432,16 @@ footer .footer__wrapper .footer__protection {
   header {
     padding: 15px 0;
   }
-  .main__title__wrapper {
+  .main__title .main__title__wrapper {
     padding-top: 150px;
   }
-  .portfolio__wrapper {
+  .portfolio .portfolio__wrapper {
     grid-template-columns: 1fr;
   }
   .demo__video__wrapper {
     margin-bottom: 50px;
   }
-  .demo__video__icon {
+  .demo__video__wrapper .demo__video__icon {
     scale: 0.6;
   }
 }
