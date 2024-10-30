@@ -1,5 +1,7 @@
 @import "_reset";
 
+
+
 @font-face {
     font-family: 'RobotoR';
     src        : url('/fonts/Roboto-Regular.ttf');
@@ -21,8 +23,6 @@ $body_Title_Size   : 16px;
 $main_Wrapper_Width: 1110px;
 $robotoR           : 'RobotoR';
 $robotoM           : 'RobotoM';
-$test_Body-color   : red;
-
 
 
 
@@ -233,38 +233,204 @@ header {
         align-self       : center;
         position         : absolute;
         z-index          : -1;
-        cursor: pointer;
+        cursor           : pointer;
 
-        &:hover{
+        &:hover {
             opacity: 0.85;
         }
     }
 }
 
 
-footer{
-    width: 100%;
+footer {
+    width           : 100%;
     background-color: $brand_Color;
-    color: white;
-    display: grid;
+    color           : white;
+    display         : grid;
 
     .footer__wrapper {
-        width: $main_Wrapper_Width;
-        display: grid;
+        width       : $main_Wrapper_Width;
+        display     : grid;
         justify-self: center;
-        align-items: baseline;
-        padding: 50px 0;
+        align-items : baseline;
+        padding     : 50px 0;
 
         .footer__author {
             margin-bottom: 20px;
-            font-family: var(--robotoM);
-            font-size: 21px;
+            font-family  : var(--robotoM);
+            font-size    : 21px;
         }
 
         .footer__protection {
             font-size: 14px;
         }
     }
+}
 
 
+
+
+@media (max-width: 1110px) {
+
+    $main_Wrapper_Width: 100%;
+
+
+    .menu__wrapper {
+        padding-left: 40px;
+    }
+
+
+    .main__title__wrapper {
+        width       : auto;
+        padding-left: 20px;
+    }
+
+
+    .about__title__wrapper {
+        width: 100%;
+    }
+
+
+    .portfolio__wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap                  : 50px;
+    }
+
+
+    .portfolio {
+        padding: 50px 0;
+    }
+
+    .service__title__wrapper {
+        width: 100%;
+    }
+
+
+    .footer__author {
+        padding-left: 20px;
+    }
+
+
+    .footer__protection {
+        padding-left: 20px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    $h1_Title_Size  : 40px;
+    $h2_Title_Size  : 28px;
+    $body_Title_Size: 16px;
+
+    header {
+        justify-content: start;
+
+        .menu__wrapper {
+            display: none;
+        }
+
+        .menu__burger__wrapper {
+            padding-left : 20px;
+            display      : grid;
+            justify-items: start;
+        }
+    }
+
+
+    .main__title {
+        justify-items: start;
+
+        .main__title__wrapper {
+            padding-top: 200px;
+
+            h1 {
+                line-height  : 50px;
+                width        : 70%;
+                margin-bottom: 40px;
+            }
+
+            p {
+                width        : 80%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+
+    .about__title {
+        padding-top   : 80px;
+        padding-bottom: 80px;
+
+        p {
+            width: 80%;
+        }
+    }
+
+
+    .portfolio__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .service__title {
+        padding-top   : 80px;
+        padding-bottom: 30px;
+
+        h2 {
+            width: 80%;
+        }
+
+        p {
+            width: 80%;
+        }
+    }
+
+    .demo__video__wrapper {
+        margin-bottom: 50px;
+    }
+
+    .footer__wrapper {
+        grid-template-columns: 1fr 2fr;
+        padding: 20px 0;
+
+        .footer__author {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 0;
+        }
+
+        .footer__protection {
+            justify-self: end;
+            padding-right: 20px;
+            font-size: 12px;
+            text-align: right;
+        }
+    }
+}
+
+
+
+@media (max-width: 432px) {
+
+    header{
+        padding: 15px 0;
+    }
+
+    .main__title__wrapper {
+        padding-top: 150px;
+    }
+
+    .portfolio__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .demo__video__wrapper {
+        margin-bottom: 50px;
+    }
+
+    .demo__video__icon {
+        scale: 0.6;
+    }
 }

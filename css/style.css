@@ -325,3 +325,115 @@ footer .footer__wrapper .footer__author {
 footer .footer__wrapper .footer__protection {
   font-size: 14px;
 }
+
+@media (max-width: 1110px) {
+  .menu__wrapper {
+    padding-left: 40px;
+  }
+  .main__title__wrapper {
+    width: auto;
+    padding-left: 20px;
+  }
+  .about__title__wrapper {
+    width: 100%;
+  }
+  .portfolio__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+  .portfolio {
+    padding: 50px 0;
+  }
+  .service__title__wrapper {
+    width: 100%;
+  }
+  .footer__author {
+    padding-left: 20px;
+  }
+  .footer__protection {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: start;
+  }
+  header .menu__wrapper {
+    display: none;
+  }
+  header .menu__burger__wrapper {
+    padding-left: 20px;
+    display: grid;
+    justify-items: start;
+  }
+  .main__title {
+    justify-items: start;
+  }
+  .main__title .main__title__wrapper {
+    padding-top: 200px;
+  }
+  .main__title .main__title__wrapper h1 {
+    line-height: 50px;
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  .main__title .main__title__wrapper p {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .about__title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about__title p {
+    width: 80%;
+  }
+  .portfolio__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .service__title {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  .service__title h2 {
+    width: 80%;
+  }
+  .service__title p {
+    width: 80%;
+  }
+  .demo__video__wrapper {
+    margin-bottom: 50px;
+  }
+  .footer__wrapper {
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 0;
+  }
+  .footer__wrapper .footer__author {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .footer__wrapper .footer__protection {
+    justify-self: end;
+    padding-right: 20px;
+    font-size: 12px;
+    text-align: right;
+  }
+}
+@media (max-width: 432px) {
+  header {
+    padding: 15px 0;
+  }
+  .main__title__wrapper {
+    padding-top: 150px;
+  }
+  .portfolio__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .demo__video__wrapper {
+    margin-bottom: 50px;
+  }
+  .demo__video__icon {
+    scale: 0.6;
+  }
+}
