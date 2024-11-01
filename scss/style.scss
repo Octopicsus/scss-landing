@@ -114,17 +114,17 @@ header {
                 }
             }
 
-            &:checked~.menu-list{
-               
-                display: grid;
-                padding-top: 5%;
-                align-content: space-around;
-                position: fixed;
+            &:checked~.menu-list {
+
+                display         : grid;
+                padding-top     : 5%;
+                align-content   : space-around;
+                position        : fixed;
                 background-color: $brand_Color;
-                width: 100vw;
-                height: 100vh;
-                top: 0;
-                left: 0;
+                width           : 100vw;
+                height          : 100vh;
+                top             : 0;
+                left            : 0;
             }
         }
 
@@ -164,9 +164,9 @@ header {
         }
 
         .menu-list {
-            position  : absolute;
-            display: none;
-            z-index   : 2;
+            position: absolute;
+            display : none;
+            z-index : 2;
 
             .menu-item {
                 display        : block;
@@ -509,21 +509,23 @@ footer {
         margin-bottom: 50px;
     }
 
-    .footer__wrapper {
-        grid-template-columns: 1fr 2fr;
-        padding              : 20px 0;
+    footer {
+        .footer__wrapper {
+            grid-template-columns: 1fr 2fr;
+            padding              : 20px 0;
 
-        .footer__author {
-            font-size    : 18px;
-            line-height  : 26px;
-            margin-bottom: 0;
-        }
+            .footer__author {
+                font-size    : 18px;
+                line-height  : 26px;
+                margin-bottom: 0;
+            }
 
-        .footer__protection {
-            justify-self : end;
-            padding-right: 20px;
-            font-size    : 12px;
-            text-align   : right;
+            .footer__protection {
+                justify-self : end;
+                padding-right: 20px;
+                font-size    : 12px;
+                text-align   : right;
+            }
         }
     }
 }
@@ -555,22 +557,6 @@ footer {
 
         .demo__video__icon {
             scale: 0.6;
-        }
-    }
-
-    footer{
-
-        .footer__wrapper{
-            padding: 15px 0;
-
-            .footer__author{
-                margin-bottom: 0;
-                font-size: 16px;
-            }
-
-            .footer__protection{
-                font-size: 12px;
-            }
         }
     }
 }

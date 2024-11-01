@@ -495,16 +495,16 @@ footer .footer__wrapper .footer__protection {
   .demo__video__wrapper {
     margin-bottom: 50px;
   }
-  .footer__wrapper {
+  footer .footer__wrapper {
     grid-template-columns: 1fr 2fr;
     padding: 20px 0;
   }
-  .footer__wrapper .footer__author {
+  footer .footer__wrapper .footer__author {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 0;
   }
-  .footer__wrapper .footer__protection {
+  footer .footer__wrapper .footer__protection {
     justify-self: end;
     padding-right: 20px;
     font-size: 12px;
@@ -526,15 +526,5 @@ footer .footer__wrapper .footer__protection {
   }
   .demo__video__wrapper .demo__video__icon {
     scale: 0.6;
-  }
-  footer .footer__wrapper {
-    padding: 15px 0;
-  }
-  footer .footer__wrapper .footer__author {
-    margin-bottom: 0;
-    font-size: 16px;
-  }
-  footer .footer__wrapper .footer__protection {
-    font-size: 12px;
   }
 }
