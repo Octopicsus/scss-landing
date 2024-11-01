@@ -1,7 +1,6 @@
 @import "_reset";
 
 
-
 @font-face {
     font-family: 'RobotoR';
     src        : url('/fonts/Roboto-Regular.ttf');
@@ -12,8 +11,6 @@
     src        : url('/fonts/Roboto-Medium.ttf');
 }
 
-
-
 $brand_Color       : rgb(52, 84, 122);
 $brand_Color-hover : rgb(60, 96, 139);
 $alt_Color         : rgb(114, 114, 114);
@@ -23,9 +20,6 @@ $body_Title_Size   : 16px;
 $main_Wrapper_Width: 1110px;
 $robotoR           : 'RobotoR';
 $robotoM           : 'RobotoM';
-
-
-
 
 
 
@@ -74,10 +68,8 @@ header {
     position        : fixed;
     background-color: rgb(238, 239, 241);
 
-
     .menu__wrapper {
         width: $main_Wrapper_Width;
-
 
         .menu {
             display              : grid;
@@ -280,7 +272,6 @@ header {
                 height           : 50px;
             }
 
-
             h5,
             p {
                 color: white;
@@ -290,25 +281,21 @@ header {
 }
 
 
-
 .service__title {
     display       : grid;
     justify-items : center;
     padding-top   : 100px;
     padding-bottom: 60px;
 
-
     .service__title__wrapper {
         display      : grid;
         justify-items: center;
         width        : $main_Wrapper_Width;
 
-
         h2 {
             margin-bottom: 50px;
             text-align   : center;
         }
-
 
         p {
             margin-bottom: 50px;
@@ -319,19 +306,16 @@ header {
 }
 
 
-
 .demo__video__wrapper {
     display      : grid;
     justify-items: center;
     margin-bottom: 100px;
-
 
     img {
         width   : $main_Wrapper_Width;
         position: relative;
         z-index : -1;
     }
-
 
     .demo__video__icon {
         background-image : url(/img/play-button.svg);
@@ -351,13 +335,11 @@ header {
 }
 
 
-
 footer {
     width           : 100%;
     background-color: $brand_Color;
     color           : white;
     display         : grid;
-
 
     .footer__wrapper {
         width       : $main_Wrapper_Width;
@@ -366,13 +348,11 @@ footer {
         align-items : baseline;
         padding     : 50px 0;
 
-
         .footer__author {
             margin-bottom: 20px;
             font-family  : var(--robotoM);
             font-size    : 21px;
         }
-
 
         .footer__protection {
             font-size: 14px;
@@ -386,30 +366,17 @@ footer {
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 1120px) {
 
-
     header {
-
 
         .menu__wrapper {
             padding-left: 40px;
             width       : 100%;
         }
-
     }
 
-
-
     .main__title {
-
 
         .main__title__wrapper {
             width       : auto;
@@ -418,18 +385,12 @@ footer {
 
     }
 
-
-
     .about__title {
-
 
         .about__title__wrapper {
             width: 100%;
         }
-
     }
-
-
 
     .portfolio {
         padding: 50px 0;
@@ -440,10 +401,7 @@ footer {
             gap                  : 50px;
             width                : 100%;
         }
-
     }
-
-
 
     .service__title {
 
@@ -451,32 +409,23 @@ footer {
         .service__title__wrapper {
             width: 100%;
         }
-
     }
 
-
-
     .demo__video__wrapper {
-
 
         img {
             width: 100%;
         }
     }
 
-
-
     footer {
-
 
         .footer__wrapper {
             width: 100%;
 
-
             .footer__author {
                 padding-left: 20px;
             }
-
 
             .footer__protection {
                 padding-left: 20px;
@@ -486,18 +435,14 @@ footer {
 }
 
 
-
 @media (max-width: 768px) {
-
 
     header {
         justify-content: start;
 
-
         .menu__wrapper {
             display: none;
         }
-
 
         .menu__burger__wrapper {
             padding-left : 20px;
@@ -506,21 +451,17 @@ footer {
         }
     }
 
-
     .main__title {
         justify-items: start;
 
-
         .main__title__wrapper {
             padding-top: 200px;
-
 
             h1 {
                 line-height  : 50px;
                 width        : 70%;
                 margin-bottom: 40px;
             }
-
 
             p {
                 width        : 80%;
@@ -529,14 +470,11 @@ footer {
         }
     }
 
-
     .about__title {
         padding-top   : 80px;
         padding-bottom: 80px;
 
-
         .about__title__wrapper {
-
 
             p {
                 width: 80%;
@@ -544,28 +482,22 @@ footer {
         }
     }
 
-
     .portfolio {
-
 
         .portfolio__wrapper {
             grid-template-columns: 1fr 1fr;
         }
     }
 
-
     .service__title {
         padding-top   : 80px;
         padding-bottom: 30px;
 
-
         .service__title__wrapper {
-
 
             h2 {
                 width: 80%;
             }
-
 
             p {
                 width: 80%;
@@ -573,26 +505,19 @@ footer {
         }
     }
 
-
     .demo__video__wrapper {
         margin-bottom: 50px;
     }
 
-
-
     .footer__wrapper {
         grid-template-columns: 1fr 2fr;
         padding              : 20px 0;
-
-
 
         .footer__author {
             font-size    : 18px;
             line-height  : 26px;
             margin-bottom: 0;
         }
-
-
 
         .footer__protection {
             justify-self : end;
@@ -607,36 +532,26 @@ footer {
 
 @media (max-width: 432px) {
 
-
     header {
         padding: 15px 0;
     }
 
-
-
     .main__title {
-
 
         .main__title__wrapper {
             padding-top: 150px;
         }
     }
 
-
-
     .portfolio {
-
 
         .portfolio__wrapper {
             grid-template-columns: 1fr;
         }
     }
 
-
-
     .demo__video__wrapper {
         margin-bottom: 50px;
-
 
         .demo__video__icon {
             scale: 0.6;
@@ -657,6 +572,5 @@ footer {
                 font-size: 12px;
             }
         }
-
     }
 }
