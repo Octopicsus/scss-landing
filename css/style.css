@@ -118,11 +118,11 @@ table {
 
 @font-face {
   font-family: "RobotoR";
-  src: url("/fonts/Roboto-Regular.ttf");
+  src: url("/scss-landing/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "RobotoM";
-  src: url("/fonts/Roboto-Medium.ttf");
+  src: url("/scss-landing/fonts/Roboto-Medium.ttf");
 }
 h1,
 h2 {
@@ -331,7 +331,7 @@ header .menu__burger__wrapper .menu-list .menu-item:hover {
   align-items: center;
 }
 .portfolio .portfolio__wrapper .work__card .work__card__icon {
-  background-image: url(/img/project.svg);
+  background-image: url(/scss-landing/img/project.svg);
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
@@ -373,7 +373,7 @@ header .menu__burger__wrapper .menu-list .menu-item:hover {
   z-index: -1;
 }
 .demo__video__wrapper .demo__video__icon {
-  background-image: url(/img/play-button.svg);
+  background-image: url(/scss-landing/img/play-button.svg);
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
